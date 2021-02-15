@@ -10,34 +10,34 @@ public GameObject camara1;
 public GameObject camara2;
 
 //Internos
-int IndexActual = 0; //Index para mover en puntos
-Vector3 PuntoA; //Punto A para Lerp
-Vector3 PuntoB; //Punto B para Lerp
-float t; //Factor tiempo de Lerp
-float factorT; //Factor de moviemnto
+int IndexActual = 0; 
+Vector3 PuntoA; 
+Vector3 PuntoB; 
+float t; 
+float factorT; 
 int disparador;
 
 
 void Start()
 {
-    t = 1f; //Esto ayuda al primer calculo
+    t = 1f; 
 }
 
 void Update()
 {
     if(disparador==1){  
      t += factorT * Time.deltaTime;
-    if (t >= 1f) //ya llegamos?
+    if (t >= 1f) 
     {
-        disparador=0;
         cambioCamara2();
+        disparador=0;
     }
 
     transform.position = Vector3.Lerp(PuntoA, PuntoB, t);
     }
      if(disparador==2){   
         t += factorT * Time.deltaTime;
-    if (t >= 1f) //ya llegamos?
+    if (t >= 1f) 
     {
         disparador=0;
         cambioCamara1();
@@ -53,12 +53,10 @@ public void CalcularValores()
 {    cambioCamara1();
      disparador=1;
     PuntoA = Puntos[IndexActual].position;
-    PuntoB = Puntos[IndexActual + 2].position;
-    t = 1.0f - t; //Solo para continuar con el movimiento y no se vea brusco una pausa
-    //FactorT siempre sera diferente entre puntos, pero al final esto ayudara que el moviento siempre sea la misma.
+    PuntoB = Puntos[IndexActual + 1].position;
+    t = 1.0f - t; 
     factorT = 1.0f / Vector3.Distance(PuntoA, PuntoB) * Velocidad;
-    // IndexActual++;
-    IndexActual=IndexActual+2;
+    IndexActual++;
 }
 
 
@@ -67,8 +65,7 @@ public void CalcularValoresAtras()
     disparador=2;
     PuntoA = Puntos[IndexActual].position;
     PuntoB = Puntos[IndexActual - 1].position;
-    t = 1.0f - t; //Solo para continuar con el movimiento y no se vea brusco una pausa
-    //FactorT siempre sera diferente entre puntos, pero al final esto ayudara que el moviento siempre sea la misma.
+    t = 1.0f - t; 
     factorT = 1.0f / Vector3.Distance(PuntoA, PuntoB) * Velocidad;
     IndexActual--;
 }
