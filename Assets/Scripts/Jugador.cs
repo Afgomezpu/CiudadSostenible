@@ -6,6 +6,7 @@ public class Jugador : MonoBehaviour
 {   
   public float Velocidad;
 public Transform[] Puntos;
+public GameObject[] Pregunta;
 public GameObject camara1;
 public GameObject camara2;
 
@@ -31,6 +32,7 @@ void Update()
     {
         cambioCamara2();
         disparador=0;
+        Pregunta[IndexActual].SetActive(true);
     }
 
     transform.position = Vector3.Lerp(PuntoA, PuntoB, t);
@@ -50,7 +52,8 @@ void Update()
 
 public void CalcularValores()
 
-{    cambioCamara1();
+{   Pregunta[IndexActual].SetActive(false);
+    cambioCamara1();
      disparador=1;
     PuntoA = Puntos[IndexActual].position;
     PuntoB = Puntos[IndexActual + 1].position;
@@ -61,7 +64,8 @@ public void CalcularValores()
 
 
 public void CalcularValoresAtras()
-{   cambioCamara1();
+{   Pregunta[IndexActual].SetActive(false);
+    cambioCamara1();
     disparador=2;
     PuntoA = Puntos[IndexActual].position;
     PuntoB = Puntos[IndexActual - 1].position;

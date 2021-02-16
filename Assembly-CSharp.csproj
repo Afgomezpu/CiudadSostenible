@@ -60,8 +60,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\itseez3d\avatar_maker\scripts\AvatarInfo.cs" />
+    <Compile Include="Assets\itseez3d\avatar_maker\scripts\AvatarMakerInitializer.cs" />
     <Compile Include="Assets\Scripts\Jugador.cs" />
     <Compile Include="Assets\Scripts\ScriptScenas.cs" />
+    <Compile Include="Assets\Scripts\SeleccionJugadores.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -99,6 +102,7 @@
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\itseez3d\avatar_maker\resources\AvatarUnlitShader.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
@@ -114,7 +118,10 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\itseez3d\DOCUMENTATION.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\itseez3d\third_party_notices.txt" />
+    <None Include="Assets\itseez3d\avatar_maker\resources\AvatarUnlitHairShader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/DataLab/Desktop/Tercera Experiencia/CiudadSostenible/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -334,6 +341,9 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.4.16f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="AvatarPluginWrapper">
+      <HintPath>C:/Users/DataLab/Desktop/Tercera Experiencia/CiudadSostenible/Assets/itseez3d/avatar_maker/Plugins/AvatarPluginWrapper.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/DataLab/Desktop/Tercera Experiencia/CiudadSostenible/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
