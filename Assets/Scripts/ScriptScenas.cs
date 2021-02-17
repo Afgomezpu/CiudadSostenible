@@ -32,6 +32,9 @@ public class ScriptScenas : MonoBehaviour
     public void VideoTutorialEscena() {
         SceneManager.LoadScene("VideoTutorial");
     }
+     public void NumeroJugadoreslEscena() {
+        SceneManager.LoadScene("NumeroJugadores");
+    }
     public void ExitGame() {
         Application.Quit();
     }

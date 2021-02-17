@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VideoTutorial.unity
     guid: 3826fe61ac0e5a94289ceeda72b2700e
+  - enabled: 1
+    path: Assets/Scenes/NumeroJugadores.unity
+    guid: a6e2e818f0c5cb747823c08013454994
   m_configObjects: {}
