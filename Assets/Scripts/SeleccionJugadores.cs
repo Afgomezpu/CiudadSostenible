@@ -2,17 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SeleccionJugadores : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private int contador;
+
     void Start()
     {
-        
+
+
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+  
+    }
+        public int Contador  // property
+     {
+    get { return contador; }
+    set { contador = value; }
     }
 }
