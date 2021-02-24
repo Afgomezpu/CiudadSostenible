@@ -66,6 +66,10 @@
     <Compile Include="Assets\Scripts\Jugador.cs" />
     <Compile Include="Assets\Scripts\ScriptScenas.cs" />
     <Compile Include="Assets\Scripts\SeleccionJugadores.cs" />
+    <Compile Include="Assets\SimplePoly - Town Pack\DemoScene\FlyCamera.cs" />
+    <Compile Include="Assets\SimplePoly - Town Pack\Standard Assets\Effects\ImageEffects\Scripts\PostEffectsBase.cs" />
+    <Compile Include="Assets\SimplePoly - Town Pack\Standard Assets\Effects\ImageEffects\Scripts\Quads.cs" />
+    <Compile Include="Assets\SimplePoly - Town Pack\Standard Assets\Effects\ImageEffects\Scripts\SunShafts.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -109,6 +113,7 @@
     <None Include="Assets\Taichi Character Pack\TwinViewer\Resources\Taichi_v0100\TwinViewer Settings\F05\animation_list.txt" />
     <None Include="Assets\Taichi Character Pack\TwinViewer\Resources\Taichi_v0100\TwinViewer Settings\F05\animation_list_all.txt" />
     <None Include="Assets\Taichi Character Pack\TwinViewer\Resources\Taichi_v0100\TwinViewer Settings\F01\animation_list_all.txt" />
+    <None Include="Assets\SimplePoly - Town Pack\Standard Assets\Effects\ImageEffects\Shaders\SunShaftsComposite.shader" />
     <None Include="Assets\Taichi Character Pack\Viewer\Resources\Taichi_v0100\Viewer Settings\stage_texture_list.txt" />
     <None Include="Assets\Taichi Character Pack\TwinViewer\Resources\Taichi_v0100\TwinViewer Settings\background_list.txt" />
     <None Include="Assets\Taichi Character Pack\TwinViewer\Resources\Taichi_v0100\TwinViewer Settings\F01\fbx_ctrl.xml" />
@@ -154,6 +159,7 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\Taichi Character Pack\Viewer\Resources\Taichi_v0100\Viewer Settings\fbx_ctrl.xml" />
     <None Include="Assets\Taichi Character Pack\TwinViewer\Resources\Taichi_v0100\TwinViewer Settings\Puppet\fbx_ctrl.xml" />
+    <None Include="Assets\SimplePoly - Town Pack\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\itseez3d\DOCUMENTATION.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
