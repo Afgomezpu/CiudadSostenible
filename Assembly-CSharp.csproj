@@ -64,6 +64,7 @@
     <Compile Include="Assets\itseez3d\avatar_maker\scripts\AvatarMakerInitializer.cs" />
     <Compile Include="Assets\Scripts\CambiarJugador.cs" />
     <Compile Include="Assets\Scripts\Jugador.cs" />
+    <Compile Include="Assets\Scripts\MovimientoCarros.cs" />
     <Compile Include="Assets\Scripts\ScriptScenas.cs" />
     <Compile Include="Assets\Scripts\SeleccionJugadores.cs" />
     <Compile Include="Assets\SimplePoly - Town Pack\DemoScene\FlyCamera.cs" />
