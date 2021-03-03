@@ -354,7 +354,7 @@ public class MovimientoCarros : MonoBehaviour
             numero9=0;
            
            pararCarros=false;
-        }
+        }}
         }
 
 
