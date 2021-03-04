@@ -66,6 +66,7 @@
     <Compile Include="Assets\itseez3d\avatar_maker\scripts\AvatarMakerInitializer.cs" />
     <Compile Include="Assets\Makaka Games\Mobile Game Icon Pack\Scripts\SampleControl.cs" />
     <Compile Include="Assets\Scripts\CambiarJugador.cs" />
+    <Compile Include="Assets\Scripts\ControladorJugadores.cs" />
     <Compile Include="Assets\Scripts\Jugador.cs" />
     <Compile Include="Assets\Scripts\MovimientoCarros.cs" />
     <Compile Include="Assets\Scripts\MovimientoPersonas.cs" />

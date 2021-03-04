@@ -62,7 +62,6 @@ public class MovimientoPersonas : MonoBehaviour
         NavRamdom=Random.Range(0,nav.Length);  
         primerObjeto=Instantiate(nav[NavRamdom],new Vector3(x, y,z), Quaternion.identity);
         contador=0;
-      
         seguir2=false;
         seguir3=false;
         seguir4=false;

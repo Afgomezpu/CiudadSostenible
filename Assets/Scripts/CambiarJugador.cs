@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CambiarJugador : MonoBehaviour
 {
@@ -14,11 +15,15 @@ public class CambiarJugador : MonoBehaviour
     public GameObject[] jugadores;
     public GameObject[] peloMujeres;
     public  GameObject[] pelohombre;
+    public GameObject pelosMujeresObjeto;
+    public GameObject pelosHombresObjeto;
+     public GameObject Nombre;
     
     void Start()
     { 
         NumeroJugadores=FindObjectOfType<SeleccionJugadores>();
         print(NumeroJugadores.Jugadores);
+        
     }
 
     // Update is called once per frame
@@ -78,6 +83,10 @@ public class CambiarJugador : MonoBehaviour
          recorrerVector1(numero,peloMujeres);
          recorrerVector2(pelohombre);
        }
+       else if(numero==4 && NumeroJugadores.Contador>2){
+         recorrerVector1(numero,peloMujeres);
+         recorrerVector2(pelohombre);
+       }
     }
 
     void recorrerVector1(int numero, GameObject[] list){
@@ -99,6 +108,17 @@ public class CambiarJugador : MonoBehaviour
             }
     }
 
+     
+   public void PeloLista(){
+          if(NumeroJugadores.Contador>2){
+                pelosMujeresObjeto.SetActive(true);
+                 pelosHombresObjeto.SetActive(false);
+             }
+            if(NumeroJugadores.Contador<=2){
+                pelosHombresObjeto.SetActive(true);
+                pelosMujeresObjeto.SetActive(false);
+             }
+   }
 
    public void btSiguiente(){
        recorrerVector2(pelohombre);
@@ -151,6 +171,44 @@ public class CambiarJugador : MonoBehaviour
         jugadores[NumeroJugadores.Contador].SetActive(true);
         // perfil.GetComponent<TextMeshProUGUI>().text = Listperfil[NumeroJugadores.Contador];
     }
+
+    }
+
+       public void ombreJugador(){
+        
+        NumeroJugadores.NombreJugador=Nombre.GetComponent<TMP_InputField>().text;
+        NumeroJugadores.NumeroJugador=NumeroJugadores.Contador;
+        print(NumeroJugadores.Contador);
+        NumeroJugadores.aceptar.SetActive(true);
+        NumeroJugadores.TextAceptar.SetActive(true);
+      
+    }
+
+    public void seleccionarJugador(){
+       if(NumeroJugadores.ListaJugadores.Count<NumeroJugadores.Jugadores){
+        Nombre.GetComponent<TMP_InputField>().text="";
+       NumeroJugadores.ingresarJugadores(NumeroJugadores.NombreJugador);
+       NumeroJugadores.ingresarNumeroJugadores(NumeroJugadores.NumeroJugador);
+            if(NumeroJugadores.ListaJugadores.Count<NumeroJugadores.Jugadores){
+                NumeroJugadores.textJugador(NumeroJugadores.ListaJugadores.Count+1);
+                // textJugadorSiguiente.SetActive(true);
+                // GameObject Temp=Instantiate(textJugadorSiguiente);
+                // Temp.SetActive(true);
+                // Destroy(textJugadorSiguiente,3f);
+            }
+            if(NumeroJugadores.ListaJugadores.Count==NumeroJugadores.Jugadores){
+                NumeroJugadores.aceptar.SetActive(false);
+                NumeroJugadores.TextAceptar.SetActive(false);
+                Nombre.SetActive(false);
+                // btnJugador.SetActive(false);
+                NumeroJugadores.siguiente.SetActive(true); 
+                NumeroJugadores.TextSiguiente.SetActive(true); 
+                    
+            }
+       }
+       else {
+           print("ya selecciono los " + NumeroJugadores.Jugadores +" jugadores");
+       }
 
     }
 
