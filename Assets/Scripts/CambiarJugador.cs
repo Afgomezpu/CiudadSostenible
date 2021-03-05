@@ -18,7 +18,11 @@ public class CambiarJugador : MonoBehaviour
     public GameObject pelosMujeresObjeto;
     public GameObject pelosHombresObjeto;
      public GameObject Nombre;
-    
+     public GameObject btnSiguiente;
+     public GameObject btnAtas;
+     public GameObject PrefabSiguiente;
+     private string colorPiel;
+     private int numeroDePelo;
     void Start()
     { 
         NumeroJugadores=FindObjectOfType<SeleccionJugadores>();
@@ -38,18 +42,23 @@ public class CambiarJugador : MonoBehaviour
        if(color.Equals("Oscuro")){
         Renderer rend= faceJugadores[NumeroJugadores.Contador].GetComponent<Renderer>();
         rend.material=Oscuro;
+        ColorPiel="Oscuro";
         }
         else if(color.Equals("Medio")){
         Renderer rend= faceJugadores[NumeroJugadores.Contador].GetComponent<Renderer>();
         rend.material=Medio;
+         ColorPiel="Medio";
         }
+        
         else if(color.Equals("Blanca")){
         Renderer rend= faceJugadores[NumeroJugadores.Contador].GetComponent<Renderer>();
         rend.material=Blanca;
+         ColorPiel="Blanca";
         }
         else if(color.Equals("Barba")){
         Renderer rend= faceJugadores[NumeroJugadores.Contador].GetComponent<Renderer>();
         rend.material=Barba;
+         ColorPiel="Barba";
         }
     }
 
@@ -58,34 +67,42 @@ public class CambiarJugador : MonoBehaviour
        if(numero==0 && NumeroJugadores.Contador<=2){
          recorrerVector1(numero,pelohombre);
          recorrerVector2(peloMujeres);
+         NumeroDePelo=numero;
        }
       else if(numero==1 && NumeroJugadores.Contador<=2){
          recorrerVector1(numero,pelohombre);
          recorrerVector2(peloMujeres);
+         NumeroDePelo=numero;
        }
        else if(numero==2 && NumeroJugadores.Contador<=2){
          recorrerVector1(numero,pelohombre);
          recorrerVector2(peloMujeres);
+         NumeroDePelo=numero;
        }
        else if(numero==0 && NumeroJugadores.Contador>2){
          recorrerVector1(numero,peloMujeres);
          recorrerVector2(pelohombre);
+         NumeroDePelo=numero;
        }
        else if(numero==1 && NumeroJugadores.Contador>2){
            recorrerVector1(numero,peloMujeres);
          recorrerVector2(pelohombre);
+         NumeroDePelo=numero;
        }
        else if(numero==2 && NumeroJugadores.Contador>2){
             recorrerVector1(numero,peloMujeres);
          recorrerVector2(pelohombre);
+         NumeroDePelo=numero;
        }
        else if(numero==3 && NumeroJugadores.Contador>2){
          recorrerVector1(numero,peloMujeres);
          recorrerVector2(pelohombre);
+         NumeroDePelo=numero;
        }
        else if(numero==4 && NumeroJugadores.Contador>2){
          recorrerVector1(numero,peloMujeres);
          recorrerVector2(pelohombre);
+         NumeroDePelo=numero;
        }
     }
 
@@ -178,6 +195,8 @@ public class CambiarJugador : MonoBehaviour
         
         NumeroJugadores.NombreJugador=Nombre.GetComponent<TMP_InputField>().text;
         NumeroJugadores.NumeroJugador=NumeroJugadores.Contador;
+        NumeroJugadores.ColorDePiel=colorPiel;
+        NumeroJugadores.NumeroPelo=NumeroDePelo;
         print(NumeroJugadores.Contador);
         NumeroJugadores.aceptar.SetActive(true);
         NumeroJugadores.TextAceptar.SetActive(true);
@@ -186,31 +205,67 @@ public class CambiarJugador : MonoBehaviour
 
     public void seleccionarJugador(){
        if(NumeroJugadores.ListaJugadores.Count<NumeroJugadores.Jugadores){
+         NumeroJugadores.Seleccionar.SetActive(true);
+         btnSiguiente.SetActive(true);
+         btnAtas.SetActive(true);
         Nombre.GetComponent<TMP_InputField>().text="";
-       NumeroJugadores.ingresarJugadores(NumeroJugadores.NombreJugador);
-       NumeroJugadores.ingresarNumeroJugadores(NumeroJugadores.NumeroJugador);
+        NumeroJugadores.ingresarJugadores(NumeroJugadores.NombreJugador);
+        NumeroJugadores.ingresarNumeroJugadores(NumeroJugadores.NumeroJugador);
+        NumeroJugadores.ingresarColor(NumeroJugadores.ColorDePiel);
+        NumeroJugadores.ingresarNumeroPelo(NumeroJugadores.NumeroPelo);
+        
             if(NumeroJugadores.ListaJugadores.Count<NumeroJugadores.Jugadores){
                 NumeroJugadores.textJugador(NumeroJugadores.ListaJugadores.Count+1);
+                //  GameObject Temp=Instantiate(PrefabSiguiente);
+                //  Temp.transform.position=new Vector3()
                 // textJugadorSiguiente.SetActive(true);
-                // GameObject Temp=Instantiate(textJugadorSiguiente);
+                // 
                 // Temp.SetActive(true);
                 // Destroy(textJugadorSiguiente,3f);
             }
             if(NumeroJugadores.ListaJugadores.Count==NumeroJugadores.Jugadores){
                 NumeroJugadores.aceptar.SetActive(false);
                 NumeroJugadores.TextAceptar.SetActive(false);
+                NumeroJugadores.Seleccionar.SetActive(false);
+                NumeroJugadores.Asignarnombre.SetActive(false);
+                btnSiguiente.SetActive(false);
+                 btnAtas.SetActive(false);
                 Nombre.SetActive(false);
-                // btnJugador.SetActive(false);
                 NumeroJugadores.siguiente.SetActive(true); 
                 NumeroJugadores.TextSiguiente.SetActive(true); 
                     
             }
+            btSiguiente();
        }
        else {
            print("ya selecciono los " + NumeroJugadores.Jugadores +" jugadores");
        }
-
+        NumeroJugadores.aceptar.SetActive(false);
+        NumeroJugadores.TextAceptar.SetActive(false);
+        NumeroJugadores.Asignarnombre.SetActive(false);
+        Nombre.SetActive(false);
+       
     }
 
+    public void habilitarNombre(){
+        Nombre.SetActive(true);
+        NumeroJugadores.Asignarnombre.SetActive(true);
+        NumeroJugadores.Seleccionar.SetActive(false);
+         btnSiguiente.SetActive(false);
+         btnAtas.SetActive(false);
+
+    }
+        public string ColorPiel   // property
+  {
+    get { return colorPiel; }
+    set { colorPiel = value; }
+  }
+   
+         public int NumeroDePelo   // property
+  {
+    get { return numeroDePelo; }
+    set { numeroDePelo = value; }
+  }
+ 
 
 }

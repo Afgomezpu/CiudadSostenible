@@ -24,7 +24,7 @@ public class ControladorJugadores : MonoBehaviour
 
     public void NumeroJugadores(int numero){
 
-        jugadores=numero;
+        Jugadores=numero;
     }
 
         public int Jugadores   // property

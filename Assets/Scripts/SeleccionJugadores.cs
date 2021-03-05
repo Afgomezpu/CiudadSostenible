@@ -12,9 +12,15 @@ public class SeleccionJugadores : MonoBehaviour
     public GameObject aceptar;
     public GameObject TextAceptar;
     public GameObject TextSiguiente;
+    public GameObject Seleccionar;
+    public GameObject Asignarnombre;
     private string nombreJugador;
     private List<string> listaJugadores;
     private List<int> listaNumeroJugadores;
+    private List<string> listaColor; 
+    private string colorDePiel;
+    private int numeroPelo;
+    private List<int > listaPelo; 
     private int numeroJugador;
     private int contador;
   
@@ -27,12 +33,15 @@ public class SeleccionJugadores : MonoBehaviour
         listaJugadores=new List<string>();
         listaNumeroJugadores=new List<int>();
         NumeroJugadores=FindObjectOfType<ControladorJugadores>();
+        print(NumeroJugadores.Jugadores);
          jugadores=NumeroJugadores.Jugadores;
          siguiente.SetActive(false);
          aceptar.SetActive(false);
          TextSiguiente.SetActive(false);
          TextAceptar.SetActive(false);   
          contador=0;
+         Seleccionar.SetActive(true);
+         Asignarnombre.SetActive(false);
     }
 
       public void textJugador(int player){
@@ -53,12 +62,31 @@ public class SeleccionJugadores : MonoBehaviour
         listaNumeroJugadores.Add(numero);
     }
 
+     public void ingresarColor(string nombre){
+        listaJugadores.Add(nombre);
+    }
+
+     public void ingresarNumeroPelo(int numero){
+        listaNumeroJugadores.Add(numero);
+    }
+
      public List<string> ListaJugadores   // property
   {
     get { return listaJugadores; }
     set { listaJugadores = value; }
   }
 
+      public List<string> ListaColor   // property
+  {
+    get { return listaColor; }
+    set { listaColor = value; }
+  }
+
+      public List<int> ListaPelo   // property
+  {
+    get { return listaPelo; }
+    set { listaPelo = value; }
+  }
      public List<int> ListaNumeroJugadores   // property
   {
     get { return listaNumeroJugadores; }
@@ -87,4 +115,17 @@ public class SeleccionJugadores : MonoBehaviour
     get { return contador; }
     set { contador = value; }
     }
+
+
+          public string  ColorDePiel  // property
+  {
+    get { return colorDePiel; }
+    set { colorDePiel = value; }
+  }
+
+        public int  NumeroPelo  // property
+  {
+    get { return numeroPelo; }
+    set { numeroPelo = value; }
+  }
 }
