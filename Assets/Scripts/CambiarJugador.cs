@@ -27,7 +27,8 @@ public class CambiarJugador : MonoBehaviour
     { 
         NumeroJugadores=FindObjectOfType<SeleccionJugadores>();
         print(NumeroJugadores.Jugadores);
-        
+        ColorPiel="Normal";
+        NumeroDePelo=5;
     }
 
     // Update is called once per frame
@@ -149,7 +150,6 @@ public class CambiarJugador : MonoBehaviour
             }
             else{
                 jugadores[i].SetActive(false);
-                
             }
           }
     
@@ -182,7 +182,7 @@ public class CambiarJugador : MonoBehaviour
     
     }
     else if(NumeroJugadores.Contador<0){
-        print("entro a el contrador");
+        print("entro a el contador");
         NumeroJugadores.Contador=jugadores.Length-1;
         jugadores[0].SetActive(false);
         jugadores[NumeroJugadores.Contador].SetActive(true);
@@ -212,6 +212,7 @@ public class CambiarJugador : MonoBehaviour
         NumeroJugadores.ingresarJugadores(NumeroJugadores.NombreJugador);
         NumeroJugadores.ingresarNumeroJugadores(NumeroJugadores.NumeroJugador);
         NumeroJugadores.ingresarColor(NumeroJugadores.ColorDePiel);
+        print(NumeroJugadores.ColorDePiel);
         NumeroJugadores.ingresarNumeroPelo(NumeroJugadores.NumeroPelo);
         
             if(NumeroJugadores.ListaJugadores.Count<NumeroJugadores.Jugadores){

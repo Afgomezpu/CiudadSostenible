@@ -16,7 +16,7 @@ public class ControladorJugadores : MonoBehaviour
       
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         

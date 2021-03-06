@@ -20,7 +20,7 @@ public class SeleccionJugadores : MonoBehaviour
     private List<string> listaColor; 
     private string colorDePiel;
     private int numeroPelo;
-    private List<int > listaPelo; 
+    private List<int> listaPelo; 
     private int numeroJugador;
     private int contador;
   
@@ -32,6 +32,8 @@ public class SeleccionJugadores : MonoBehaviour
     {
         listaJugadores=new List<string>();
         listaNumeroJugadores=new List<int>();
+        listaColor=new List<string>();
+        listaPelo=new List<int>();
         NumeroJugadores=FindObjectOfType<ControladorJugadores>();
         print(NumeroJugadores.Jugadores);
          jugadores=NumeroJugadores.Jugadores;
@@ -63,11 +65,11 @@ public class SeleccionJugadores : MonoBehaviour
     }
 
      public void ingresarColor(string nombre){
-        listaJugadores.Add(nombre);
+        listaColor.Add(nombre);
     }
 
      public void ingresarNumeroPelo(int numero){
-        listaNumeroJugadores.Add(numero);
+        listaPelo.Add(numero);
     }
 
      public List<string> ListaJugadores   // property
