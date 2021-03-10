@@ -35,7 +35,7 @@ public class SeleccionJugadores : MonoBehaviour
         listaColor=new List<string>();
         listaPelo=new List<int>();
         NumeroJugadores=FindObjectOfType<ControladorJugadores>();
-        print(NumeroJugadores.Jugadores);
+        //print(NumeroJugadores.Jugadores);
          jugadores=NumeroJugadores.Jugadores;
          siguiente.SetActive(false);
          aceptar.SetActive(false);

@@ -6360,6 +6360,70 @@ RectTransform:
   m_AnchoredPosition: {x: 3.7000122, y: 0.8000488}
   m_SizeDelta: {x: 30.5, y: 8.100098}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &748896301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 748896303}
+  - component: {fileID: 748896302}
+  m_Layer: 0
+  m_Name: Jugadores
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &748896302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748896301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2aa33879d876b40bdedac61a84ce7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Oscuro: {fileID: 2100000, guid: 451ae87eb47aaaa45855905f6b572ac7, type: 2}
+  Medio: {fileID: 2100000, guid: ce3ddb6c57b2ebd49b7268e8d4566d89, type: 2}
+  Blanca: {fileID: 2100000, guid: 96d3007c8675e2e4c8cca7601c3b5c3e, type: 2}
+  Barba: {fileID: 2100000, guid: a4e75ee75f04c2648ae8e47145989615, type: 2}
+  jugadores:
+  - {fileID: 523725708435303364, guid: 3ff09708ece3f8c479f2dba525123163, type: 3}
+  - {fileID: 4758738379650567489, guid: 08b5e3d42874cb5429a64ee3296589cc, type: 3}
+  - {fileID: 8513038367217763317, guid: c4cf548d447053549bf9271a85bbaa9f, type: 3}
+  - {fileID: 9215115747258388934, guid: 3076bade3e43ffe42b073444f7559b06, type: 3}
+  - {fileID: 5984154285640159091, guid: 34a78f33c1766404fa242c8d7cb03c0a, type: 3}
+  - {fileID: 3873556270315832539, guid: a668298212918104e9d33f9fdfb3ec9d, type: 3}
+  peloMujeres:
+  - {fileID: 3374611637925637560, guid: 20b3cf01ed975994786be8e2f59248e1, type: 3}
+  - {fileID: 4037155621447280179, guid: 7dd1d9e8cbee15045a90180f0fda494f, type: 3}
+  - {fileID: 5183340781335480107, guid: 2b1864e9c0b4056498fb6aa5bb602a6c, type: 3}
+  - {fileID: 8042742417186866738, guid: 55af2974dad1b37429da650ceaa0493b, type: 3}
+  - {fileID: 8630983266733806524, guid: bc7a25af8c160ae4b889cb543adb03b9, type: 3}
+  pelohombre:
+  - {fileID: 7675025822375819977, guid: 8770f4d1efc330b459d1561fb897676d, type: 3}
+  - {fileID: 3715625398230922825, guid: fcf2942b651226d43a1b4f42b54eea2e, type: 3}
+  - {fileID: 7386625779705625354, guid: a4873fea3c8c2c346a6b872ffa6b01af, type: 3}
+--- !u!4 &748896303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748896301}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2235.1416, y: 1854.9663, z: -23400.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &752493591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 425598, guid: 73121aa02ef2a1b42915f5842503a4fc,

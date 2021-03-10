@@ -26,7 +26,6 @@ public class CambiarJugador : MonoBehaviour
     void Start()
     { 
         NumeroJugadores=FindObjectOfType<SeleccionJugadores>();
-        print(NumeroJugadores.Jugadores);
         ColorPiel="Normal";
         NumeroDePelo=5;
     }
@@ -146,6 +145,8 @@ public class CambiarJugador : MonoBehaviour
             for(int i=0;i<jugadores.Length;i++){
              if(i==NumeroJugadores.Contador){
              jugadores[i].SetActive(true);
+             ColorPiel="Normal";
+            NumeroDePelo=5;
             //  perfil.GetComponent<TextMeshProUGUI>().text = Listperfil[i];
             }
             else{
@@ -160,19 +161,19 @@ public class CambiarJugador : MonoBehaviour
         jugadores[NumeroJugadores.Contador].SetActive(true);
         // perfil.GetComponent<TextMeshProUGUI>().text = Listperfil[NumeroJugadores.Contador];
     }
-    print(NumeroJugadores.Contador);
+    
     }
 
     public void btAtras(){
        recorrerVector2(pelohombre);
        recorrerVector2(peloMujeres);
-        print(jugadores.Length);
-        print(NumeroJugadores.Contador);
         NumeroJugadores.Contador=NumeroJugadores.Contador-1;
           if(NumeroJugadores.Contador<jugadores.Length && NumeroJugadores.Contador>=0){
             for(int i=0;i<jugadores.Length;i++){
              if(i==NumeroJugadores.Contador){
              jugadores[i].SetActive(true);
+               ColorPiel="Normal";
+              NumeroDePelo=5;
             //  perfil.GetComponent<TextMeshProUGUI>().text = Listperfil[i];
             }
             else{
@@ -182,7 +183,6 @@ public class CambiarJugador : MonoBehaviour
     
     }
     else if(NumeroJugadores.Contador<0){
-        print("entro a el contador");
         NumeroJugadores.Contador=jugadores.Length-1;
         jugadores[0].SetActive(false);
         jugadores[NumeroJugadores.Contador].SetActive(true);
@@ -197,7 +197,6 @@ public class CambiarJugador : MonoBehaviour
         NumeroJugadores.NumeroJugador=NumeroJugadores.Contador;
         NumeroJugadores.ColorDePiel=colorPiel;
         NumeroJugadores.NumeroPelo=NumeroDePelo;
-        print(NumeroJugadores.Contador);
         NumeroJugadores.aceptar.SetActive(true);
         NumeroJugadores.TextAceptar.SetActive(true);
       
@@ -212,7 +211,6 @@ public class CambiarJugador : MonoBehaviour
         NumeroJugadores.ingresarJugadores(NumeroJugadores.NombreJugador);
         NumeroJugadores.ingresarNumeroJugadores(NumeroJugadores.NumeroJugador);
         NumeroJugadores.ingresarColor(NumeroJugadores.ColorDePiel);
-        print(NumeroJugadores.ColorDePiel);
         NumeroJugadores.ingresarNumeroPelo(NumeroJugadores.NumeroPelo);
         
             if(NumeroJugadores.ListaJugadores.Count<NumeroJugadores.Jugadores){
