@@ -30,50 +30,68 @@ void Update()
      t += factorT * Time.deltaTime;
     if (t >= 1f) 
     {
-        cambioCamara2();
+        // cambioCamara2();
         disparador=0;
-        Pregunta[IndexActual].SetActive(true);
+        // Pregunta[IndexActual].SetActive(true);
     }
 
     transform.position = Vector3.Lerp(PuntoA, PuntoB, t);
     }
-     if(disparador==2){   
-        t += factorT * Time.deltaTime;
+
+     if(disparador==2){  
+     t += factorT * Time.deltaTime;
     if (t >= 1f) 
     {
-        disparador=0;
-        cambioCamara1();
+        disparador--;
+        CalcularValores(1);
+        
+        // Pregunta[IndexActual].SetActive(true);
     }
 
     transform.position = Vector3.Lerp(PuntoA, PuntoB, t);
     }
+
+     if(disparador==3){  
+     t += factorT * Time.deltaTime;
+    if (t >= 1f) 
+    {
+        disparador--;
+        CalcularValores(2);
+        
+        // Pregunta[IndexActual].SetActive(true);
+    }
+
+    transform.position = Vector3.Lerp(PuntoA, PuntoB, t);
+    }
+ 
+ 
 }
 
 
-public void CalcularValores()
+public void CalcularValores(int numeroDeCasillas)
 
-{   Pregunta[IndexActual].SetActive(false);
+{   
+    // for(int i=0; i<numero ;i++){
+     Pregunta[IndexActual].SetActive(false);
     cambioCamara1();
-     disparador=1;
+     disparador=numeroDeCasillas;
     PuntoA = Puntos[IndexActual].position;
     PuntoB = Puntos[IndexActual + 1].position;
     t = 1.0f - t; 
     factorT = 1.0f / Vector3.Distance(PuntoA, PuntoB) * Velocidad;
     IndexActual++;
+    // }
+    
 }
 
 
-public void CalcularValoresAtras()
-{   Pregunta[IndexActual].SetActive(false);
-    cambioCamara1();
-    disparador=2;
-    PuntoA = Puntos[IndexActual].position;
-    PuntoB = Puntos[IndexActual - 1].position;
-    t = 1.0f - t; 
-    factorT = 1.0f / Vector3.Distance(PuntoA, PuntoB) * Velocidad;
-    IndexActual--;
+public void pregunta(){
+    cambioCamara2();
+    Pregunta[IndexActual].SetActive(true);
+
 }
 
+   
   void cambioCamara1(){
         camara2.SetActive(false);
         camara1.SetActive(true);
@@ -83,6 +101,7 @@ public void CalcularValoresAtras()
         camara2.SetActive(true);
         camara1.SetActive(false);
   }
+
 
 
 }

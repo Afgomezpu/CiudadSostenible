@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AsignarJugadores : MonoBehaviour
 {
+   
+    
     SeleccionJugadores NumeroJugadores;
     public Material Oscuro;
     public Material Medio;
@@ -12,10 +14,26 @@ public class AsignarJugadores : MonoBehaviour
     public GameObject[] jugadores;
     public GameObject[] peloMujeres;
     public  GameObject[] pelohombre;
-
+    List<GameObject> listJugadores;
+    int aux;
+    int Jugador;
+    public GameObject jugador1;
+    public GameObject Jugador2;
+    private int numeroJugadorsecuencia;
+    List<GameObject> jugadoresSecuencia=new List<GameObject>();
+     
     void Start(){    
+
          NumeroJugadores=FindObjectOfType<SeleccionJugadores>();
          asignarJugadores();
+         listJugadores=new List<GameObject>();
+         numeroJugadorsecuencia=0;
+          //  JugadoresSecuencia=new List<GameObject>();
+         
+     //     JugadoresPrueba=new List<GameObject>();
+       
+     //     JugadoresPrueba.Add(jugador1);
+     //     JugadoresPrueba.Add(Jugador2);
     }
 
 
@@ -30,6 +48,8 @@ public class AsignarJugadores : MonoBehaviour
                     //   GameObject personaje=Instantiate(jugadores[NumeroPlayer]);
                       GameObject personaje=Instantiate(jugadores[NumeroJugadores.ListaNumeroJugadores[i]]);
                       personaje.transform.position=new Vector3(187.3f,50f,22.4f);
+                      print(personaje);
+                      JugadoresSecuencia.Add(personaje);
                       if(NumeroJugadores.ListaColor[i]!="Normal"){
                            for(int j=0; j<personaje.transform.childCount;j++){
                               if(personaje.transform.GetChild(j).name=="Body"){
@@ -37,7 +57,7 @@ public class AsignarJugadores : MonoBehaviour
                                    rend.material=CambiarcolorPiel(NumeroJugadores.ListaColor[i]);
                               }
                       }
-              }
+                  }
                     if(NumeroJugadores.ListaPelo[i]!=5 && NumeroJugadores.ListaNumeroJugadores[i]<=2){
                                 GameObject personaje2=Instantiate(pelohombre[NumeroJugadores.ListaPelo[i]]);
                                 personaje2.transform.parent=personaje.transform;
@@ -58,8 +78,9 @@ public class AsignarJugadores : MonoBehaviour
 
      
                     }
-
+                    
      }
+     print(JugadoresSecuencia.Count);
      }
        
        
@@ -85,4 +106,24 @@ public class AsignarJugadores : MonoBehaviour
              return null;
         }
     }
+
+
+    public void secuenciaprueba(){
+     //    for(int i=0;i<)
+
+    }
+
+           public int  NumeroJugadorsecuencia  // property
+  {
+    get { return numeroJugadorsecuencia; }
+    set { numeroJugadorsecuencia = value; }
+  }
+  
+           public List<GameObject>  JugadoresSecuencia  // property
+  {
+    get { return jugadoresSecuencia; }
+    set { jugadoresSecuencia = value; }
+  }
+
+    
 }

@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\MovimientoCarros.cs" />
     <Compile Include="Assets\Scripts\MovimientoPersonas.cs" />
     <Compile Include="Assets\Scripts\ScriptScenas.cs" />
+    <Compile Include="Assets\Scripts\SecuenciaJugadores.cs" />
     <Compile Include="Assets\Scripts\SeleccionJugadores.cs" />
     <Compile Include="Assets\Scripts\Textoflotante.cs" />
     <Compile Include="Assets\SimplePoly - Town Pack\DemoScene\FlyCamera.cs" />
