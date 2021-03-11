@@ -80,7 +80,49 @@ public class AsignarJugadores : MonoBehaviour
                     }
                     
      }
+
      print(JugadoresSecuencia.Count);
+     }
+
+     public void asignarSoloJugador(){
+
+                    //   GameObject personaje=Instantiate(jugadores[NumeroPlayer]);
+                      GameObject personaje=Instantiate(jugadores[NumeroJugadores.ListaNumeroJugadores[NumeroJugadores.ListaNumeroJugadores.Count-1]]);
+                      personaje.transform.position=new Vector3(187.3f,50f,22.4f);
+                      print(personaje);
+                      JugadoresSecuencia.Add(personaje);
+                      if(NumeroJugadores.ListaColor[NumeroJugadores.ListaNumeroJugadores.Count-1]!="Normal"){
+                           for(int j=0; j<personaje.transform.childCount;j++){
+                              if(personaje.transform.GetChild(j).name=="Body"){
+                                   Renderer rend=personaje.transform.GetChild(j).GetComponent<Renderer>();
+                                   rend.material=CambiarcolorPiel(NumeroJugadores.ListaColor[NumeroJugadores.ListaNumeroJugadores.Count-1]);
+                              }
+                      }
+                  }
+                    if(NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]!=5 && NumeroJugadores.ListaNumeroJugadores[NumeroJugadores.ListaNumeroJugadores.Count-1]<=2){
+                                GameObject personaje2=Instantiate(pelohombre[NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]]);
+                                personaje2.transform.parent=personaje.transform;
+                                personaje2.transform.position=new Vector3(187.3f,-9.5f,22.4f);
+     
+                    }
+                     if(NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]!=5 && NumeroJugadores.ListaNumeroJugadores[NumeroJugadores.ListaNumeroJugadores.Count-1]>2){
+                                if(NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]==4){
+                                   GameObject personaje2=Instantiate(peloMujeres[NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]]);
+                                personaje2.transform.parent=personaje.transform;
+                                personaje2.transform.position=new Vector3(187.3f,-9f,22.4f);
+                                }
+                                else{
+                                      GameObject personaje2=Instantiate(peloMujeres[NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]]);
+                                personaje2.transform.parent=personaje.transform;
+                                personaje2.transform.position=new Vector3(187.3f,-13f,22.4f);
+                                }
+
+     
+                    }
+                    print(NumeroJugadores.ListaNumeroJugadores.Count);
+                    
+     
+
      }
        
        

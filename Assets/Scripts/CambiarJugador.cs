@@ -23,6 +23,8 @@ public class CambiarJugador : MonoBehaviour
      public GameObject PrefabSiguiente;
      private string colorPiel;
      private int numeroDePelo;
+     public GameObject aceptarJugador;
+     public GameObject Acepta2;
     void Start()
     { 
         NumeroJugadores=FindObjectOfType<SeleccionJugadores>();
@@ -267,4 +269,29 @@ public class CambiarJugador : MonoBehaviour
   }
  
 
-}
+  public void    NombreJugador(){
+        
+        NumeroJugadores.NombreJugador=Nombre.GetComponent<TMP_InputField>().text;
+        NumeroJugadores.NumeroJugador=NumeroJugadores.Contador;
+        NumeroJugadores.ColorDePiel=colorPiel;
+        NumeroJugadores.NumeroPelo=NumeroDePelo; 
+        aceptarJugador.SetActive(true);
+      
+    }
+
+    public void seleccionarJugadorNuevo(){
+       
+        Nombre.GetComponent<TMP_InputField>().text="";
+        NumeroJugadores.ingresarJugadores(NumeroJugadores.NombreJugador);
+        NumeroJugadores.ingresarNumeroJugadores(NumeroJugadores.NumeroJugador);
+        NumeroJugadores.ingresarColor(NumeroJugadores.ColorDePiel);
+        NumeroJugadores.ingresarNumeroPelo(NumeroJugadores.NumeroPelo); 
+        Acepta2.SetActive(true);   
+        
+                 }
+        
+
+       
+    }
+
+

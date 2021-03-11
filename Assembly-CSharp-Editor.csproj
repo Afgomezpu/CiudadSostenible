@@ -66,6 +66,7 @@
     <Compile Include="Assets\itseez3d\avatar_maker\scripts\editor\BaseWindow.cs" />
     <Compile Include="Assets\itseez3d\avatar_maker\scripts\editor\Export.cs" />
     <Compile Include="Assets\itseez3d\avatar_maker\scripts\editor\MotionCaptureWindow.cs" />
+    <Compile Include="Assets\VRWaterShader2\Editor\VRWS2Inspector.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/DataLab/Desktop/Tercera Experiencia/CiudadSostenible/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
