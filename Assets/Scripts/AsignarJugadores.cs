@@ -47,7 +47,7 @@ public class AsignarJugadores : MonoBehaviour
                for(int i=0; i<NumeroJugadores.ListaNumeroJugadores.Count; i++){ 
                     //   GameObject personaje=Instantiate(jugadores[NumeroPlayer]);
                       GameObject personaje=Instantiate(jugadores[NumeroJugadores.ListaNumeroJugadores[i]]);
-                      personaje.transform.position=new Vector3(187.3f,50f,22.4f);
+                      personaje.transform.position=new Vector3(203.9f,82f,24.5f);
                       print(personaje);
                       JugadoresSecuencia.Add(personaje);
                       if(NumeroJugadores.ListaColor[i]!="Normal"){
@@ -88,7 +88,7 @@ public class AsignarJugadores : MonoBehaviour
 
                     //   GameObject personaje=Instantiate(jugadores[NumeroPlayer]);
                       GameObject personaje=Instantiate(jugadores[NumeroJugadores.ListaNumeroJugadores[NumeroJugadores.ListaNumeroJugadores.Count-1]]);
-                      personaje.transform.position=new Vector3(187.3f,50f,22.4f);
+                      personaje.transform.position=new Vector3(203.9f,82f,24.5f);
                       print(personaje);
                       JugadoresSecuencia.Add(personaje);
                       if(NumeroJugadores.ListaColor[NumeroJugadores.ListaNumeroJugadores.Count-1]!="Normal"){
@@ -102,19 +102,19 @@ public class AsignarJugadores : MonoBehaviour
                     if(NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]!=5 && NumeroJugadores.ListaNumeroJugadores[NumeroJugadores.ListaNumeroJugadores.Count-1]<=2){
                                 GameObject personaje2=Instantiate(pelohombre[NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]]);
                                 personaje2.transform.parent=personaje.transform;
-                                personaje2.transform.position=new Vector3(187.3f,-9.5f,22.4f);
+                                personaje2.transform.position=new Vector3(202.3537f,24.15f,24.59483f);
      
                     }
                      if(NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]!=5 && NumeroJugadores.ListaNumeroJugadores[NumeroJugadores.ListaNumeroJugadores.Count-1]>2){
                                 if(NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]==4){
                                    GameObject personaje2=Instantiate(peloMujeres[NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]]);
                                 personaje2.transform.parent=personaje.transform;
-                                personaje2.transform.position=new Vector3(187.3f,-9f,22.4f);
+                                personaje2.transform.position=new Vector3(202.3537f,24f,24.59483f);
                                 }
                                 else{
                                       GameObject personaje2=Instantiate(peloMujeres[NumeroJugadores.ListaPelo[NumeroJugadores.ListaNumeroJugadores.Count-1]]);
                                 personaje2.transform.parent=personaje.transform;
-                                personaje2.transform.position=new Vector3(187.3f,-13f,22.4f);
+                                personaje2.transform.position=new Vector3(202.3537f,20f,24.59483f);
                                 }
 
      
