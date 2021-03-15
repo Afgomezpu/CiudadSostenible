@@ -204,6 +204,7 @@
     <None Include="Assets\itseez3d\third_party_notices.txt" />
     <None Include="Assets\itseez3d\avatar_maker\resources\AvatarUnlitHairShader.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Ornamental Flower Set\Shaders\Transparent-BumpSpecNoCull.shader" />
     <None Include="Assets\Taichi Character Pack\TwinViewer\Resources\Taichi_v0100\TwinViewer Settings\F03\Arum\fbx_ctrl.xml" />
     <None Include="Assets\Taichi Character Pack\Viewer\Resources\Taichi_v0100\Viewer Settings\title_text.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
