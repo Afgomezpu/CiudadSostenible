@@ -35,8 +35,6 @@ public class AsignarJugadores : MonoBehaviour
      //     JugadoresPrueba.Add(jugador1);
      //     JugadoresPrueba.Add(Jugador2);
     }
-
-
     void Update()
     {
         
@@ -47,7 +45,7 @@ public class AsignarJugadores : MonoBehaviour
                for(int i=0; i<NumeroJugadores.ListaNumeroJugadores.Count; i++){ 
                     //   GameObject personaje=Instantiate(jugadores[NumeroPlayer]);
                       GameObject personaje=Instantiate(jugadores[NumeroJugadores.ListaNumeroJugadores[i]]);
-                      personaje.transform.position=new Vector3(203.9f,82f,24.5f);
+                      personaje.transform.position=new Vector3(230.4f,82f,24f);
                       print(personaje);
                       JugadoresSecuencia.Add(personaje);
                       if(NumeroJugadores.ListaColor[i]!="Normal"){
@@ -61,19 +59,19 @@ public class AsignarJugadores : MonoBehaviour
                     if(NumeroJugadores.ListaPelo[i]!=5 && NumeroJugadores.ListaNumeroJugadores[i]<=2){
                                 GameObject personaje2=Instantiate(pelohombre[NumeroJugadores.ListaPelo[i]]);
                                 personaje2.transform.parent=personaje.transform;
-                                personaje2.transform.position=new Vector3(187.3f,-9.5f,22.4f);
+                                personaje2.transform.position=new Vector3(232.4f,-9.5f,22.4f);
      
                     }
                      if(NumeroJugadores.ListaPelo[i]!=5 && NumeroJugadores.ListaNumeroJugadores[i]>2){
                                 if(NumeroJugadores.ListaPelo[i]==4){
                                    GameObject personaje2=Instantiate(peloMujeres[NumeroJugadores.ListaPelo[i]]);
                                 personaje2.transform.parent=personaje.transform;
-                                personaje2.transform.position=new Vector3(187.3f,-9f,22.4f);
+                                personaje2.transform.position=new Vector3(232.4f,-9f,22.4f);
                                 }
                                 else{
                                       GameObject personaje2=Instantiate(peloMujeres[NumeroJugadores.ListaPelo[i]]);
                                 personaje2.transform.parent=personaje.transform;
-                                personaje2.transform.position=new Vector3(187.3f,-13f,22.4f);
+                                personaje2.transform.position=new Vector3(232.4f,-13f,22.4f);
                                 }
 
      
