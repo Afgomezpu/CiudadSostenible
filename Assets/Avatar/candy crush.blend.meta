@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: dd57b2f7c7d58284996d85ed7d97bc2c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Blue Stripes
+    100002: Blue Stripes.001
+    100004: Camera
+    100006: //RootNode
+    100008: Combo Chocolate
+    100010: Combo Chocolate|Sphere.002|Dupli|
+    100012: Combo Chocolate|Sphere.002|Dupli|1
+    100014: Combo Chocolate|Sphere.002|Dupli|10
+    100016: Combo Chocolate|Sphere.002|Dupli|11
+    100018: Combo Chocolate|Sphere.002|Dupli|12
+    100020: Combo Chocolate|Sphere.002|Dupli|13
+    100022: Combo Chocolate|Sphere.002|Dupli|14
+    100024: Combo Chocolate|Sphere.002|Dupli|15
+    100026: Combo Chocolate|Sphere.002|Dupli|16
+    100028: Combo Chocolate|Sphere.002|Dupli|17
+    100030: Combo Chocolate|Sphere.002|Dupli|18
+    100032: Combo Chocolate|Sphere.002|Dupli|19
+    100034: Combo Chocolate|Sphere.002|Dupli|2
+    100036: Combo Chocolate|Sphere.002|Dupli|20
+    100038: Combo Chocolate|Sphere.002|Dupli|21
+    100040: Combo Chocolate|Sphere.002|Dupli|22
+    100042: Combo Chocolate|Sphere.002|Dupli|23
+    100044: Combo Chocolate|Sphere.002|Dupli|24
+    100046: Combo Chocolate|Sphere.002|Dupli|25
+    100048: Combo Chocolate|Sphere.002|Dupli|26
+    100050: Combo Chocolate|Sphere.002|Dupli|27
+    100052: Combo Chocolate|Sphere.002|Dupli|28
+    100054: Combo Chocolate|Sphere.002|Dupli|29
+    100056: Combo Chocolate|Sphere.002|Dupli|3
+    100058: Combo Chocolate|Sphere.002|Dupli|30
+    100060: Combo Chocolate|Sphere.002|Dupli|31
+    100062: Combo Chocolate|Sphere.002|Dupli|32
+    100064: Combo Chocolate|Sphere.002|Dupli|33
+    100066: Combo Chocolate|Sphere.002|Dupli|34
+    100068: Combo Chocolate|Sphere.002|Dupli|35
+    100070: Combo Chocolate|Sphere.002|Dupli|36
+    100072: Combo Chocolate|Sphere.002|Dupli|37
+    100074: Combo Chocolate|Sphere.002|Dupli|38
+    100076: Combo Chocolate|Sphere.002|Dupli|39
+    100078: Combo Chocolate|Sphere.002|Dupli|4
+    100080: Combo Chocolate|Sphere.002|Dupli|40
+    100082: Combo Chocolate|Sphere.002|Dupli|41
+    100084: Combo Chocolate|Sphere.002|Dupli|42
+    100086: Combo Chocolate|Sphere.002|Dupli|43
+    100088: Combo Chocolate|Sphere.002|Dupli|44
+    100090: Combo Chocolate|Sphere.002|Dupli|45
+    100092: Combo Chocolate|Sphere.002|Dupli|46
+    100094: Combo Chocolate|Sphere.002|Dupli|47
+    100096: Combo Chocolate|Sphere.002|Dupli|48
+    100098: Combo Chocolate|Sphere.002|Dupli|49
+    100100: Combo Chocolate|Sphere.002|Dupli|5
+    100102: Combo Chocolate|Sphere.002|Dupli|50
+    100104: Combo Chocolate|Sphere.002|Dupli|51
+    100106: Combo Chocolate|Sphere.002|Dupli|52
+    100108: Combo Chocolate|Sphere.002|Dupli|53
+    100110: Combo Chocolate|Sphere.002|Dupli|54
+    100112: Combo Chocolate|Sphere.002|Dupli|55
+    100114: Combo Chocolate|Sphere.002|Dupli|56
+    100116: Combo Chocolate|Sphere.002|Dupli|57
+    100118: Combo Chocolate|Sphere.002|Dupli|58
+    100120: Combo Chocolate|Sphere.002|Dupli|59
+    100122: Combo Chocolate|Sphere.002|Dupli|6
+    100124: Combo Chocolate|Sphere.002|Dupli|60
+    100126: Combo Chocolate|Sphere.002|Dupli|61
+    100128: Combo Chocolate|Sphere.002|Dupli|62
+    100130: Combo Chocolate|Sphere.002|Dupli|63
+    100132: Combo Chocolate|Sphere.002|Dupli|64
+    100134: Combo Chocolate|Sphere.002|Dupli|65
+    100136: Combo Chocolate|Sphere.002|Dupli|66
+    100138: Combo Chocolate|Sphere.002|Dupli|67
+    100140: Combo Chocolate|Sphere.002|Dupli|68
+    100142: Combo Chocolate|Sphere.002|Dupli|69
+    100144: Combo Chocolate|Sphere.002|Dupli|7
+    100146: Combo Chocolate|Sphere.002|Dupli|70
+    100148: Combo Chocolate|Sphere.002|Dupli|71
+    100150: Combo Chocolate|Sphere.002|Dupli|72
+    100152: Combo Chocolate|Sphere.002|Dupli|73
+    100154: Combo Chocolate|Sphere.002|Dupli|74
+    100156: Combo Chocolate|Sphere.002|Dupli|75
+    100158: Combo Chocolate|Sphere.002|Dupli|76
+    100160: Combo Chocolate|Sphere.002|Dupli|77
+    100162: Combo Chocolate|Sphere.002|Dupli|78
+    100164: Combo Chocolate|Sphere.002|Dupli|79
+    100166: Combo Chocolate|Sphere.002|Dupli|8
+    100168: Combo Chocolate|Sphere.002|Dupli|80
+    100170: Combo Chocolate|Sphere.002|Dupli|81
+    100172: Combo Chocolate|Sphere.002|Dupli|82
+    100174: Combo Chocolate|Sphere.002|Dupli|83
+    100176: Combo Chocolate|Sphere.002|Dupli|84
+    100178: Combo Chocolate|Sphere.002|Dupli|85
+    100180: Combo Chocolate|Sphere.002|Dupli|86
+    100182: Combo Chocolate|Sphere.002|Dupli|87
+    100184: Combo Chocolate|Sphere.002|Dupli|88
+    100186: Combo Chocolate|Sphere.002|Dupli|89
+    100188: Combo Chocolate|Sphere.002|Dupli|9
+    100190: Combo Chocolate|Sphere.002|Dupli|90
+    100192: Combo Chocolate|Sphere.002|Dupli|91
+    100194: Combo Chocolate|Sphere.002|Dupli|92
+    100196: Combo Chocolate|Sphere.002|Dupli|93
+    100198: Combo Chocolate|Sphere.002|Dupli|94
+    100200: Combo Chocolate|Sphere.002|Dupli|95
+    100202: Combo Chocolate|Sphere.002|Dupli|96
+    100204: Combo Chocolate|Sphere.002|Dupli|97
+    100206: Combo Chocolate|Sphere.002|Dupli|98
+    100208: Combo Chocolate|Sphere.002|Dupli|99
+    100210: Green Stripes
+    100212: Green Stripes.001
+    100214: Orange Stripes
+    100216: Plane
+    100218: Plane.003
+    100220: Point
+    100222: Point.001
+    100224: Point.002
+    100226: Point.003
+    100228: Purple Stripes
+    100230: Red Stripes
+    100232: Red Stripes.001
+    100234: Sphere.002
+    100236: Wrapper Purple
+    100238: Wrapper Purple.001
+    100240: Wrapper Purple.002
+    100242: Wrapper Purple.003
+    100244: Yellow Stripes
+    400000: Blue Stripes
+    400002: Blue Stripes.001
+    400004: Camera
+    400006: //RootNode
+    400008: Combo Chocolate
+    400010: Combo Chocolate|Sphere.002|Dupli|
+    400012: Combo Chocolate|Sphere.002|Dupli|1
+    400014: Combo Chocolate|Sphere.002|Dupli|10
+    400016: Combo Chocolate|Sphere.002|Dupli|11
+    400018: Combo Chocolate|Sphere.002|Dupli|12
+    400020: Combo Chocolate|Sphere.002|Dupli|13
+    400022: Combo Chocolate|Sphere.002|Dupli|14
+    400024: Combo Chocolate|Sphere.002|Dupli|15
+    400026: Combo Chocolate|Sphere.002|Dupli|16
+    400028: Combo Chocolate|Sphere.002|Dupli|17
+    400030: Combo Chocolate|Sphere.002|Dupli|18
+    400032: Combo Chocolate|Sphere.002|Dupli|19
+    400034: Combo Chocolate|Sphere.002|Dupli|2
+    400036: Combo Chocolate|Sphere.002|Dupli|20
+    400038: Combo Chocolate|Sphere.002|Dupli|21
+    400040: Combo Chocolate|Sphere.002|Dupli|22
+    400042: Combo Chocolate|Sphere.002|Dupli|23
+    400044: Combo Chocolate|Sphere.002|Dupli|24
+    400046: Combo Chocolate|Sphere.002|Dupli|25
+    400048: Combo Chocolate|Sphere.002|Dupli|26
+    400050: Combo Chocolate|Sphere.002|Dupli|27
+    400052: Combo Chocolate|Sphere.002|Dupli|28
+    400054: Combo Chocolate|Sphere.002|Dupli|29
+    400056: Combo Chocolate|Sphere.002|Dupli|3
+    400058: Combo Chocolate|Sphere.002|Dupli|30
+    400060: Combo Chocolate|Sphere.002|Dupli|31
+    400062: Combo Chocolate|Sphere.002|Dupli|32
+    400064: Combo Chocolate|Sphere.002|Dupli|33
+    400066: Combo Chocolate|Sphere.002|Dupli|34
+    400068: Combo Chocolate|Sphere.002|Dupli|35
+    400070: Combo Chocolate|Sphere.002|Dupli|36
+    400072: Combo Chocolate|Sphere.002|Dupli|37
+    400074: Combo Chocolate|Sphere.002|Dupli|38
+    400076: Combo Chocolate|Sphere.002|Dupli|39
+    400078: Combo Chocolate|Sphere.002|Dupli|4
+    400080: Combo Chocolate|Sphere.002|Dupli|40
+    400082: Combo Chocolate|Sphere.002|Dupli|41
+    400084: Combo Chocolate|Sphere.002|Dupli|42
+    400086: Combo Chocolate|Sphere.002|Dupli|43
+    400088: Combo Chocolate|Sphere.002|Dupli|44
+    400090: Combo Chocolate|Sphere.002|Dupli|45
+    400092: Combo Chocolate|Sphere.002|Dupli|46
+    400094: Combo Chocolate|Sphere.002|Dupli|47
+    400096: Combo Chocolate|Sphere.002|Dupli|48
+    400098: Combo Chocolate|Sphere.002|Dupli|49
+    400100: Combo Chocolate|Sphere.002|Dupli|5
+    400102: Combo Chocolate|Sphere.002|Dupli|50
+    400104: Combo Chocolate|Sphere.002|Dupli|51
+    400106: Combo Chocolate|Sphere.002|Dupli|52
+    400108: Combo Chocolate|Sphere.002|Dupli|53
+    400110: Combo Chocolate|Sphere.002|Dupli|54
+    400112: Combo Chocolate|Sphere.002|Dupli|55
+    400114: Combo Chocolate|Sphere.002|Dupli|56
+    400116: Combo Chocolate|Sphere.002|Dupli|57
+    400118: Combo Chocolate|Sphere.002|Dupli|58
+    400120: Combo Chocolate|Sphere.002|Dupli|59
+    400122: Combo Chocolate|Sphere.002|Dupli|6
+    400124: Combo Chocolate|Sphere.002|Dupli|60
+    400126: Combo Chocolate|Sphere.002|Dupli|61
+    400128: Combo Chocolate|Sphere.002|Dupli|62
+    400130: Combo Chocolate|Sphere.002|Dupli|63
+    400132: Combo Chocolate|Sphere.002|Dupli|64
+    400134: Combo Chocolate|Sphere.002|Dupli|65
+    400136: Combo Chocolate|Sphere.002|Dupli|66
+    400138: Combo Chocolate|Sphere.002|Dupli|67
+    400140: Combo Chocolate|Sphere.002|Dupli|68
+    400142: Combo Chocolate|Sphere.002|Dupli|69
+    400144: Combo Chocolate|Sphere.002|Dupli|7
+    400146: Combo Chocolate|Sphere.002|Dupli|70
+    400148: Combo Chocolate|Sphere.002|Dupli|71
+    400150: Combo Chocolate|Sphere.002|Dupli|72
+    400152: Combo Chocolate|Sphere.002|Dupli|73
+    400154: Combo Chocolate|Sphere.002|Dupli|74
+    400156: Combo Chocolate|Sphere.002|Dupli|75
+    400158: Combo Chocolate|Sphere.002|Dupli|76
+    400160: Combo Chocolate|Sphere.002|Dupli|77
+    400162: Combo Chocolate|Sphere.002|Dupli|78
+    400164: Combo Chocolate|Sphere.002|Dupli|79
+    400166: Combo Chocolate|Sphere.002|Dupli|8
+    400168: Combo Chocolate|Sphere.002|Dupli|80
+    400170: Combo Chocolate|Sphere.002|Dupli|81
+    400172: Combo Chocolate|Sphere.002|Dupli|82
+    400174: Combo Chocolate|Sphere.002|Dupli|83
+    400176: Combo Chocolate|Sphere.002|Dupli|84
+    400178: Combo Chocolate|Sphere.002|Dupli|85
+    400180: Combo Chocolate|Sphere.002|Dupli|86
+    400182: Combo Chocolate|Sphere.002|Dupli|87
+    400184: Combo Chocolate|Sphere.002|Dupli|88
+    400186: Combo Chocolate|Sphere.002|Dupli|89
+    400188: Combo Chocolate|Sphere.002|Dupli|9
+    400190: Combo Chocolate|Sphere.002|Dupli|90
+    400192: Combo Chocolate|Sphere.002|Dupli|91
+    400194: Combo Chocolate|Sphere.002|Dupli|92
+    400196: Combo Chocolate|Sphere.002|Dupli|93
+    400198: Combo Chocolate|Sphere.002|Dupli|94
+    400200: Combo Chocolate|Sphere.002|Dupli|95
+    400202: Combo Chocolate|Sphere.002|Dupli|96
+    400204: Combo Chocolate|Sphere.002|Dupli|97
+    400206: Combo Chocolate|Sphere.002|Dupli|98
+    400208: Combo Chocolate|Sphere.002|Dupli|99
+    400210: Green Stripes
+    400212: Green Stripes.001
+    400214: Orange Stripes
+    400216: Plane
+    400218: Plane.003
+    400220: Point
+    400222: Point.001
+    400224: Point.002
+    400226: Point.003
+    400228: Purple Stripes
+    400230: Red Stripes
+    400232: Red Stripes.001
+    400234: Sphere.002
+    400236: Wrapper Purple
+    400238: Wrapper Purple.001
+    400240: Wrapper Purple.002
+    400242: Wrapper Purple.003
+    400244: Yellow Stripes
+    2000000: Camera
+    2100000: Stripe
+    2100002: Stripe_Red
+    2100004: Stripe_Green
+    2100006: Stripe_Purple
+    2100008: Stripe_Blue
+    2100010: Chocolate
+    2100012: Flakes
+    2100014: Stripe_Yellow
+    2100016: Wrapper
+    2100018: Purple
+    2100020: Wrapper.Blue
+    2100022: Blue
+    2100024: Wrapper_Red
+    2100026: Red
+    2100028: Wrapper.Green
+    2100030: Green
+    2100032: Ground
+    2300000: Blue Stripes
+    2300002: Blue Stripes.001
+    2300004: Combo Chocolate
+    2300006: Combo Chocolate|Sphere.002|Dupli|
+    2300008: Combo Chocolate|Sphere.002|Dupli|1
+    2300010: Combo Chocolate|Sphere.002|Dupli|10
+    2300012: Combo Chocolate|Sphere.002|Dupli|11
+    2300014: Combo Chocolate|Sphere.002|Dupli|12
+    2300016: Combo Chocolate|Sphere.002|Dupli|13
+    2300018: Combo Chocolate|Sphere.002|Dupli|14
+    2300020: Combo Chocolate|Sphere.002|Dupli|15
+    2300022: Combo Chocolate|Sphere.002|Dupli|16
+    2300024: Combo Chocolate|Sphere.002|Dupli|17
+    2300026: Combo Chocolate|Sphere.002|Dupli|18
+    2300028: Combo Chocolate|Sphere.002|Dupli|19
+    2300030: Combo Chocolate|Sphere.002|Dupli|2
+    2300032: Combo Chocolate|Sphere.002|Dupli|20
+    2300034: Combo Chocolate|Sphere.002|Dupli|21
+    2300036: Combo Chocolate|Sphere.002|Dupli|22
+    2300038: Combo Chocolate|Sphere.002|Dupli|23
+    2300040: Combo Chocolate|Sphere.002|Dupli|24
+    2300042: Combo Chocolate|Sphere.002|Dupli|25
+    2300044: Combo Chocolate|Sphere.002|Dupli|26
+    2300046: Combo Chocolate|Sphere.002|Dupli|27
+    2300048: Combo Chocolate|Sphere.002|Dupli|28
+    2300050: Combo Chocolate|Sphere.002|Dupli|29
+    2300052: Combo Chocolate|Sphere.002|Dupli|3
+    2300054: Combo Chocolate|Sphere.002|Dupli|30
+    2300056: Combo Chocolate|Sphere.002|Dupli|31
+    2300058: Combo Chocolate|Sphere.002|Dupli|32
+    2300060: Combo Chocolate|Sphere.002|Dupli|33
+    2300062: Combo Chocolate|Sphere.002|Dupli|34
+    2300064: Combo Chocolate|Sphere.002|Dupli|35
+    2300066: Combo Chocolate|Sphere.002|Dupli|36
+    2300068: Combo Chocolate|Sphere.002|Dupli|37
+    2300070: Combo Chocolate|Sphere.002|Dupli|38
+    2300072: Combo Chocolate|Sphere.002|Dupli|39
+    2300074: Combo Chocolate|Sphere.002|Dupli|4
+    2300076: Combo Chocolate|Sphere.002|Dupli|40
+    2300078: Combo Chocolate|Sphere.002|Dupli|41
+    2300080: Combo Chocolate|Sphere.002|Dupli|42
+    2300082: Combo Chocolate|Sphere.002|Dupli|43
+    2300084: Combo Chocolate|Sphere.002|Dupli|44
+    2300086: Combo Chocolate|Sphere.002|Dupli|45
+    2300088: Combo Chocolate|Sphere.002|Dupli|46
+    2300090: Combo Chocolate|Sphere.002|Dupli|47
+    2300092: Combo Chocolate|Sphere.002|Dupli|48
+    2300094: Combo Chocolate|Sphere.002|Dupli|49
+    2300096: Combo Chocolate|Sphere.002|Dupli|5
+    2300098: Combo Chocolate|Sphere.002|Dupli|50
+    2300100: Combo Chocolate|Sphere.002|Dupli|51
+    2300102: Combo Chocolate|Sphere.002|Dupli|52
+    2300104: Combo Chocolate|Sphere.002|Dupli|53
+    2300106: Combo Chocolate|Sphere.002|Dupli|54
+    2300108: Combo Chocolate|Sphere.002|Dupli|55
+    2300110: Combo Chocolate|Sphere.002|Dupli|56
+    2300112: Combo Chocolate|Sphere.002|Dupli|57
+    2300114: Combo Chocolate|Sphere.002|Dupli|58
+    2300116: Combo Chocolate|Sphere.002|Dupli|59
+    2300118: Combo Chocolate|Sphere.002|Dupli|6
+    2300120: Combo Chocolate|Sphere.002|Dupli|60
+    2300122: Combo Chocolate|Sphere.002|Dupli|61
+    2300124: Combo Chocolate|Sphere.002|Dupli|62
+    2300126: Combo Chocolate|Sphere.002|Dupli|63
+    2300128: Combo Chocolate|Sphere.002|Dupli|64
+    2300130: Combo Chocolate|Sphere.002|Dupli|65
+    2300132: Combo Chocolate|Sphere.002|Dupli|66
+    2300134: Combo Chocolate|Sphere.002|Dupli|67
+    2300136: Combo Chocolate|Sphere.002|Dupli|68
+    2300138: Combo Chocolate|Sphere.002|Dupli|69
+    2300140: Combo Chocolate|Sphere.002|Dupli|7
+    2300142: Combo Chocolate|Sphere.002|Dupli|70
+    2300144: Combo Chocolate|Sphere.002|Dupli|71
+    2300146: Combo Chocolate|Sphere.002|Dupli|72
+    2300148: Combo Chocolate|Sphere.002|Dupli|73
+    2300150: Combo Chocolate|Sphere.002|Dupli|74
+    2300152: Combo Chocolate|Sphere.002|Dupli|75
+    2300154: Combo Chocolate|Sphere.002|Dupli|76
+    2300156: Combo Chocolate|Sphere.002|Dupli|77
+    2300158: Combo Chocolate|Sphere.002|Dupli|78
+    2300160: Combo Chocolate|Sphere.002|Dupli|79
+    2300162: Combo Chocolate|Sphere.002|Dupli|8
+    2300164: Combo Chocolate|Sphere.002|Dupli|80
+    2300166: Combo Chocolate|Sphere.002|Dupli|81
+    2300168: Combo Chocolate|Sphere.002|Dupli|82
+    2300170: Combo Chocolate|Sphere.002|Dupli|83
+    2300172: Combo Chocolate|Sphere.002|Dupli|84
+    2300174: Combo Chocolate|Sphere.002|Dupli|85
+    2300176: Combo Chocolate|Sphere.002|Dupli|86
+    2300178: Combo Chocolate|Sphere.002|Dupli|87
+    2300180: Combo Chocolate|Sphere.002|Dupli|88
+    2300182: Combo Chocolate|Sphere.002|Dupli|89
+    2300184: Combo Chocolate|Sphere.002|Dupli|9
+    2300186: Combo Chocolate|Sphere.002|Dupli|90
+    2300188: Combo Chocolate|Sphere.002|Dupli|91
+    2300190: Combo Chocolate|Sphere.002|Dupli|92
+    2300192: Combo Chocolate|Sphere.002|Dupli|93
+    2300194: Combo Chocolate|Sphere.002|Dupli|94
+    2300196: Combo Chocolate|Sphere.002|Dupli|95
+    2300198: Combo Chocolate|Sphere.002|Dupli|96
+    2300200: Combo Chocolate|Sphere.002|Dupli|97
+    2300202: Combo Chocolate|Sphere.002|Dupli|98
+    2300204: Combo Chocolate|Sphere.002|Dupli|99
+    2300206: Green Stripes
+    2300208: Green Stripes.001
+    2300210: Orange Stripes
+    2300212: Plane
+    2300214: Plane.003
+    2300216: Purple Stripes
+    2300218: Red Stripes
+    2300220: Red Stripes.001
+    2300222: Sphere.002
+    2300224: Wrapper Purple
+    2300226: Wrapper Purple.001
+    2300228: Wrapper Purple.002
+    2300230: Wrapper Purple.003
+    2300232: Yellow Stripes
+    3300000: Blue Stripes
+    3300002: Blue Stripes.001
+    3300004: Combo Chocolate
+    3300006: Combo Chocolate|Sphere.002|Dupli|
+    3300008: Combo Chocolate|Sphere.002|Dupli|1
+    3300010: Combo Chocolate|Sphere.002|Dupli|10
+    3300012: Combo Chocolate|Sphere.002|Dupli|11
+    3300014: Combo Chocolate|Sphere.002|Dupli|12
+    3300016: Combo Chocolate|Sphere.002|Dupli|13
+    3300018: Combo Chocolate|Sphere.002|Dupli|14
+    3300020: Combo Chocolate|Sphere.002|Dupli|15
+    3300022: Combo Chocolate|Sphere.002|Dupli|16
+    3300024: Combo Chocolate|Sphere.002|Dupli|17
+    3300026: Combo Chocolate|Sphere.002|Dupli|18
+    3300028: Combo Chocolate|Sphere.002|Dupli|19
+    3300030: Combo Chocolate|Sphere.002|Dupli|2
+    3300032: Combo Chocolate|Sphere.002|Dupli|20
+    3300034: Combo Chocolate|Sphere.002|Dupli|21
+    3300036: Combo Chocolate|Sphere.002|Dupli|22
+    3300038: Combo Chocolate|Sphere.002|Dupli|23
+    3300040: Combo Chocolate|Sphere.002|Dupli|24
+    3300042: Combo Chocolate|Sphere.002|Dupli|25
+    3300044: Combo Chocolate|Sphere.002|Dupli|26
+    3300046: Combo Chocolate|Sphere.002|Dupli|27
+    3300048: Combo Chocolate|Sphere.002|Dupli|28
+    3300050: Combo Chocolate|Sphere.002|Dupli|29
+    3300052: Combo Chocolate|Sphere.002|Dupli|3
+    3300054: Combo Chocolate|Sphere.002|Dupli|30
+    3300056: Combo Chocolate|Sphere.002|Dupli|31
+    3300058: Combo Chocolate|Sphere.002|Dupli|32
+    3300060: Combo Chocolate|Sphere.002|Dupli|33
+    3300062: Combo Chocolate|Sphere.002|Dupli|34
+    3300064: Combo Chocolate|Sphere.002|Dupli|35
+    3300066: Combo Chocolate|Sphere.002|Dupli|36
+    3300068: Combo Chocolate|Sphere.002|Dupli|37
+    3300070: Combo Chocolate|Sphere.002|Dupli|38
+    3300072: Combo Chocolate|Sphere.002|Dupli|39
+    3300074: Combo Chocolate|Sphere.002|Dupli|4
+    3300076: Combo Chocolate|Sphere.002|Dupli|40
+    3300078: Combo Chocolate|Sphere.002|Dupli|41
+    3300080: Combo Chocolate|Sphere.002|Dupli|42
+    3300082: Combo Chocolate|Sphere.002|Dupli|43
+    3300084: Combo Chocolate|Sphere.002|Dupli|44
+    3300086: Combo Chocolate|Sphere.002|Dupli|45
+    3300088: Combo Chocolate|Sphere.002|Dupli|46
+    3300090: Combo Chocolate|Sphere.002|Dupli|47
+    3300092: Combo Chocolate|Sphere.002|Dupli|48
+    3300094: Combo Chocolate|Sphere.002|Dupli|49
+    3300096: Combo Chocolate|Sphere.002|Dupli|5
+    3300098: Combo Chocolate|Sphere.002|Dupli|50
+    3300100: Combo Chocolate|Sphere.002|Dupli|51
+    3300102: Combo Chocolate|Sphere.002|Dupli|52
+    3300104: Combo Chocolate|Sphere.002|Dupli|53
+    3300106: Combo Chocolate|Sphere.002|Dupli|54
+    3300108: Combo Chocolate|Sphere.002|Dupli|55
+    3300110: Combo Chocolate|Sphere.002|Dupli|56
+    3300112: Combo Chocolate|Sphere.002|Dupli|57
+    3300114: Combo Chocolate|Sphere.002|Dupli|58
+    3300116: Combo Chocolate|Sphere.002|Dupli|59
+    3300118: Combo Chocolate|Sphere.002|Dupli|6
+    3300120: Combo Chocolate|Sphere.002|Dupli|60
+    3300122: Combo Chocolate|Sphere.002|Dupli|61
+    3300124: Combo Chocolate|Sphere.002|Dupli|62
+    3300126: Combo Chocolate|Sphere.002|Dupli|63
+    3300128: Combo Chocolate|Sphere.002|Dupli|64
+    3300130: Combo Chocolate|Sphere.002|Dupli|65
+    3300132: Combo Chocolate|Sphere.002|Dupli|66
+    3300134: Combo Chocolate|Sphere.002|Dupli|67
+    3300136: Combo Chocolate|Sphere.002|Dupli|68
+    3300138: Combo Chocolate|Sphere.002|Dupli|69
+    3300140: Combo Chocolate|Sphere.002|Dupli|7
+    3300142: Combo Chocolate|Sphere.002|Dupli|70
+    3300144: Combo Chocolate|Sphere.002|Dupli|71
+    3300146: Combo Chocolate|Sphere.002|Dupli|72
+    3300148: Combo Chocolate|Sphere.002|Dupli|73
+    3300150: Combo Chocolate|Sphere.002|Dupli|74
+    3300152: Combo Chocolate|Sphere.002|Dupli|75
+    3300154: Combo Chocolate|Sphere.002|Dupli|76
+    3300156: Combo Chocolate|Sphere.002|Dupli|77
+    3300158: Combo Chocolate|Sphere.002|Dupli|78
+    3300160: Combo Chocolate|Sphere.002|Dupli|79
+    3300162: Combo Chocolate|Sphere.002|Dupli|8
+    3300164: Combo Chocolate|Sphere.002|Dupli|80
+    3300166: Combo Chocolate|Sphere.002|Dupli|81
+    3300168: Combo Chocolate|Sphere.002|Dupli|82
+    3300170: Combo Chocolate|Sphere.002|Dupli|83
+    3300172: Combo Chocolate|Sphere.002|Dupli|84
+    3300174: Combo Chocolate|Sphere.002|Dupli|85
+    3300176: Combo Chocolate|Sphere.002|Dupli|86
+    3300178: Combo Chocolate|Sphere.002|Dupli|87
+    3300180: Combo Chocolate|Sphere.002|Dupli|88
+    3300182: Combo Chocolate|Sphere.002|Dupli|89
+    3300184: Combo Chocolate|Sphere.002|Dupli|9
+    3300186: Combo Chocolate|Sphere.002|Dupli|90
+    3300188: Combo Chocolate|Sphere.002|Dupli|91
+    3300190: Combo Chocolate|Sphere.002|Dupli|92
+    3300192: Combo Chocolate|Sphere.002|Dupli|93
+    3300194: Combo Chocolate|Sphere.002|Dupli|94
+    3300196: Combo Chocolate|Sphere.002|Dupli|95
+    3300198: Combo Chocolate|Sphere.002|Dupli|96
+    3300200: Combo Chocolate|Sphere.002|Dupli|97
+    3300202: Combo Chocolate|Sphere.002|Dupli|98
+    3300204: Combo Chocolate|Sphere.002|Dupli|99
+    3300206: Green Stripes
+    3300208: Green Stripes.001
+    3300210: Orange Stripes
+    3300212: Plane
+    3300214: Plane.003
+    3300216: Purple Stripes
+    3300218: Red Stripes
+    3300220: Red Stripes.001
+    3300222: Sphere.002
+    3300224: Wrapper Purple
+    3300226: Wrapper Purple.001
+    3300228: Wrapper Purple.002
+    3300230: Wrapper Purple.003
+    3300232: Yellow Stripes
+    4300000: Orange Stripes
+    4300002: Red Stripes
+    4300004: Green Stripes
+    4300006: Purple Stripes
+    4300008: Blue Stripes
+    4300010: Combo Chocolate
+    4300012: Combo Chocolate|Sphere.002|Dupli|
+    4300014: Yellow Stripes
+    4300016: Wrapper Purple
+    4300018: Plane.003
+    4300020: Wrapper Purple.001
+    4300022: Blue Stripes.001
+    4300024: Wrapper Purple.002
+    4300026: Red Stripes.001
+    4300028: Wrapper Purple.003
+    4300030: Green Stripes.001
+    4300032: Plane
+    10800000: Point
+    10800002: Point.001
+    10800004: Point.002
+    10800006: Point.003
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
