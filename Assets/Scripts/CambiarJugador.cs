@@ -195,12 +195,18 @@ public class CambiarJugador : MonoBehaviour
 
        public void ombreJugador(){
         
-        NumeroJugadores.NombreJugador=Nombre.GetComponent<TMP_InputField>().text;
+        if(Nombre.GetComponent<TMP_InputField>().text==""){
+          print("ingrese el nombre de la persona");
+        }
+        else{
+          NumeroJugadores.NombreJugador=Nombre.GetComponent<TMP_InputField>().text;
         NumeroJugadores.NumeroJugador=NumeroJugadores.Contador;
         NumeroJugadores.ColorDePiel=colorPiel;
         NumeroJugadores.NumeroPelo=NumeroDePelo;
         NumeroJugadores.aceptar.SetActive(true);
         NumeroJugadores.TextAceptar.SetActive(true);
+        }
+        
       
     }
 

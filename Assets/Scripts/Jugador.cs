@@ -10,6 +10,8 @@ public GameObject[] Pregunta;
 public GameObject camara1;
 public GameObject camara2;
 public GameObject camara3;
+public GameObject BtnSiguiente;
+public GameObject textSiguiente;
 
 //Internos
 int IndexActual = 0; 
@@ -32,6 +34,8 @@ void Update()
     if (t >= 1f) 
     {
         // cambioCamara2();
+        BtnSiguiente.SetActive(true);
+        textSiguiente.SetActive(true);
         disparador=0;
         // Pregunta[IndexActual].SetActive(true);
     }

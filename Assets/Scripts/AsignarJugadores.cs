@@ -16,20 +16,20 @@ public class AsignarJugadores : MonoBehaviour
     public GameObject[] peloMujeres;
     public  GameObject[] pelohombre;
     List<GameObject> listJugadores;
-    int aux;
-    int Jugador;
-    public GameObject jugador1;
-    public GameObject Jugador2;
     private int numeroJugadorsecuencia;
-    List<GameObject> jugadoresSecuencia=new List<GameObject>();
+   private  List<GameObject> jugadoresSecuencia=new List<GameObject>();
      public GameObject Textoflotante;
-
+     public float Contador;
+     private List<int> puntajeJugadores=new List<int>();
+     Vector3 ValorTexto ;
     void Start(){    
 
          NumeroJugadores=FindObjectOfType<SeleccionJugadores>();
          asignarJugadores();
+         Contador=0;
          listJugadores=new List<GameObject>();
          numeroJugadorsecuencia=0;
+         ValorTexto=new Vector3();
           //  JugadoresSecuencia=new List<GameObject>();
          
      //     JugadoresPrueba=new List<GameObject>();
@@ -58,10 +58,15 @@ public class AsignarJugadores : MonoBehaviour
                               if(personaje.transform.GetChild(k).name=="Nuevotexto"){
                                    print(personaje.transform.GetChild(k).GetComponent<TextMeshPro>().text);
                                   personaje.transform.GetChild(k).GetComponent<TextMeshPro>().text= NumeroJugadores.ListaJugadores[i]; 
+                                   ValorTexto=personaje.transform.GetChild(k).transform.position;
+                                  personaje.transform.GetChild(k).transform.position= new Vector3(ValorTexto.x,ValorTexto.y+Contador,ValorTexto.z);
+                                  Contador=Contador+6f;
+                                  
                               }
                       }
                       print(personaje);
                       JugadoresSecuencia.Add(personaje);
+                      PuntajeJugadores.Add(0);
                       if(NumeroJugadores.ListaColor[i]!="Normal"){
                            for(int j=0; j<personaje.transform.childCount;j++){
                               if(personaje.transform.GetChild(j).name=="Body"){
@@ -100,7 +105,7 @@ public class AsignarJugadores : MonoBehaviour
 
                     //   GameObject personaje=Instantiate(jugadores[NumeroPlayer]);
                       GameObject personaje=Instantiate(jugadores[NumeroJugadores.ListaNumeroJugadores[NumeroJugadores.ListaNumeroJugadores.Count-1]]);
-                      personaje.transform.position=new Vector3(203.9f,82f,24.5f);
+                      personaje.transform.position=new Vector3(230.4f,82f,24f);
                       print(personaje);
                       JugadoresSecuencia.Add(personaje);
                       if(NumeroJugadores.ListaColor[NumeroJugadores.ListaNumeroJugadores.Count-1]!="Normal"){
@@ -177,6 +182,14 @@ public class AsignarJugadores : MonoBehaviour
   {
     get { return jugadoresSecuencia; }
     set { jugadoresSecuencia = value; }
+  }
+
+  
+
+            public List<int>  PuntajeJugadores  // property
+  {
+    get { return puntajeJugadores; }
+    set { puntajeJugadores = value; }
   }
 
     
