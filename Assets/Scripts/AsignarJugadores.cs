@@ -20,7 +20,7 @@ public class AsignarJugadores : MonoBehaviour
    private  List<GameObject> jugadoresSecuencia=new List<GameObject>();
      public GameObject Textoflotante;
      public float Contador;
-     private List<int> puntajeJugadores=new List<int>();
+     private List<Puntaje> puntajeJugadores=new List<Puntaje>();
      Vector3 ValorTexto ;
     void Start(){    
 
@@ -66,7 +66,8 @@ public class AsignarJugadores : MonoBehaviour
                       }
                       print(personaje);
                       JugadoresSecuencia.Add(personaje);
-                      PuntajeJugadores.Add(0);
+                      Puntaje puntajeJugad=new Puntaje();
+                      PuntajeJugadores.Add(puntajeJugad);
                       if(NumeroJugadores.ListaColor[i]!="Normal"){
                            for(int j=0; j<personaje.transform.childCount;j++){
                               if(personaje.transform.GetChild(j).name=="Body"){
@@ -186,7 +187,7 @@ public class AsignarJugadores : MonoBehaviour
 
   
 
-            public List<int>  PuntajeJugadores  // property
+            public List<Puntaje>  PuntajeJugadores  // property
   {
     get { return puntajeJugadores; }
     set { puntajeJugadores = value; }

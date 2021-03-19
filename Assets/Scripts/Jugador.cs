@@ -14,7 +14,7 @@ public GameObject BtnSiguiente;
 public GameObject textSiguiente;
 
 //Internos
-int IndexActual = 0; 
+private int indexActual = 0; 
 Vector3 PuntoA; 
 Vector3 PuntoB; 
 float t; 
@@ -122,6 +122,14 @@ public void pregunta(){
  
    }
 
+
+
+          public int  IndexActual  // property
+  {
+    get { return indexActual; }
+    set { indexActual = value; }
+  }
+  
 
 
 }

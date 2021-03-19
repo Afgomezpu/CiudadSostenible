@@ -6,7 +6,6 @@ using TMPro;
 public class SecuenciaJugadores : MonoBehaviour
 {   
     GameObject player ;
-  
      List<GameObject> jugadores;
     private int numeroJugador;
     AsignarJugadores NumeroJugadores;
@@ -45,7 +44,7 @@ public void Jugar(){
         
     }
      
-      GameObject jugadorSeleccionado(){
+    GameObject jugadorSeleccionado(){
         print(NumeroJugador);
          if(NumeroJugador>=NumeroJugadores.JugadoresSecuencia.Count-1){
             NumeroJugador=0;
@@ -62,7 +61,46 @@ public void Jugar(){
             //   player = jugadorSeleccionado();
               player.GetComponent<Jugador>().CalcularValores(numero);
               print("jugador pregunta" +NumeroJugador );
-              NumeroJugadores.PuntajeJugadores[NumeroJugador]=NumeroJugadores.PuntajeJugadores[NumeroJugador];
+
+              // NumeroJugadores.PuntajeJugadores[NumeroJugador]=NumeroJugadores.PuntajeJugadores[NumeroJugador];
+              print("numero de index " + player.GetComponent<Jugador>().IndexActual);
+
+
+              // if(player.GetComponent<Jugador>().IndexActual==1 || player.GetComponent<Jugador>().IndexActual==3 || player.GetComponent<Jugador>().IndexActual==22){
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1=NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1+puntuacion;
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==2 || player.GetComponent<Jugador>().IndexActual==7 || player.GetComponent<Jugador>().IndexActual==16){
+
+                
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==8){
+
+                
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==4 || player.GetComponent<Jugador>().IndexActual==5){
+
+                
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==6 || player.GetComponent<Jugador>().IndexActual==11){
+
+                
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==9 || player.GetComponent<Jugador>().IndexActual==10 || player.GetComponent<Jugador>().IndexActual==13){
+
+                
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==14 || player.GetComponent<Jugador>().IndexActual==15 || player.GetComponent<Jugador>().IndexActual==17||player.GetComponent<Jugador>().IndexActual==23){
+
+                
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==18){
+                
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==12 || player.GetComponent<Jugador>().IndexActual==19 || player.GetComponent<Jugador>().IndexActual==20||player.GetComponent<Jugador>().IndexActual==21){
+                
+              // }
+
+
 
         
        
@@ -77,7 +115,51 @@ public void Jugar(){
      
             //   player = jugadorSeleccionado();
               print("jugador pregunta" +NumeroJugador );
-              NumeroJugadores.PuntajeJugadores[NumeroJugador]=NumeroJugadores.PuntajeJugadores[NumeroJugador]+puntuacion;
+              print("Puntuacion " + player.GetComponent<Jugador>().IndexActual);
+              // NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntaje1=NumeroJugadores.PuntajeJugadores[NumeroJugador]+puntuacion;
+
+                 if(player.GetComponent<Jugador>().IndexActual==1 || player.GetComponent<Jugador>().IndexActual==3 || player.GetComponent<Jugador>().IndexActual==22){
+                 NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1=NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1+puntuacion;
+                 NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador1=NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador1+puntuacion;
+              }
+              else if(player.GetComponent<Jugador>().IndexActual==2 || player.GetComponent<Jugador>().IndexActual==7 || player.GetComponent<Jugador>().IndexActual==16){
+                 NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion2=NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion2+puntuacion;
+                 NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador2=NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador2+puntuacion;
+                
+              }
+              else if(player.GetComponent<Jugador>().IndexActual==8){
+                 NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion3=NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion3+puntuacion;
+                 NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador3=NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador3+puntuacion;
+                
+              }
+              // else if(player.GetComponent<Jugador>().IndexActual==4 || player.GetComponent<Jugador>().IndexActual==5){
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1=NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1+puntuacion;
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador1=NumeroJugadores.PuntajeJugadores[NumeroJugador].contador1+puntuacion;
+                
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==6 || player.GetComponent<Jugador>().IndexActual==11){
+
+              // NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1=NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1+puntuacion;
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador1=NumeroJugadores.PuntajeJugadores[NumeroJugador].contador1+puntuacion;   
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==9 || player.GetComponent<Jugador>().IndexActual==10 || player.GetComponent<Jugador>().IndexActual==13){
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1=NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1+puntuacion;
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador1=NumeroJugadores.PuntajeJugadores[NumeroJugador].contador1+puntuacion;
+                
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==14 || player.GetComponent<Jugador>().IndexActual==15 || player.GetComponent<Jugador>().IndexActual==17||player.GetComponent<Jugador>().IndexActual==23){
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1=NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1+puntuacion;
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador1=NumeroJugadores.PuntajeJugadores[NumeroJugador].contador1+puntuacion;
+                
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==18){
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1=NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1+puntuacion;
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador1=NumeroJugadores.PuntajeJugadores[NumeroJugador].contador1+puntuacion;
+              // }
+              // else if(player.GetComponent<Jugador>().IndexActual==12 || player.GetComponent<Jugador>().IndexActual==19 || player.GetComponent<Jugador>().IndexActual==20||player.GetComponent<Jugador>().IndexActual==21){
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1=NumeroJugadores.PuntajeJugadores[NumeroJugador].Puntuacion1+puntuacion;
+              //    NumeroJugadores.PuntajeJugadores[NumeroJugador].Contador1=NumeroJugadores.PuntajeJugadores[NumeroJugador].contador1+puntuacion;
+              // }
 
         
        
