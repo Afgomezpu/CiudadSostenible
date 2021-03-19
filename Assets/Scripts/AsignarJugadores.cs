@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class AsignarJugadores : MonoBehaviour
 {
@@ -21,7 +22,8 @@ public class AsignarJugadores : MonoBehaviour
     public GameObject Jugador2;
     private int numeroJugadorsecuencia;
     List<GameObject> jugadoresSecuencia=new List<GameObject>();
-     
+     public GameObject Textoflotante;
+
     void Start(){    
 
          NumeroJugadores=FindObjectOfType<SeleccionJugadores>();
@@ -46,6 +48,18 @@ public class AsignarJugadores : MonoBehaviour
                     //   GameObject personaje=Instantiate(jugadores[NumeroPlayer]);
                       GameObject personaje=Instantiate(jugadores[NumeroJugadores.ListaNumeroJugadores[i]]);
                       personaje.transform.position=new Vector3(230.4f,82f,24f);
+                    //   GameObject personaje3=Instantiate(Textoflotante);
+                    //   print(NumeroJugadores.ListaJugadores[i]);
+                                
+                    //             personaje3.transform.parent=personaje.transform;
+                    //             personaje3.transform.position=new Vector3(232.4f,82f,22.4f);
+                    //             personaje3.GetComponent<TextMeshProUGUI>().text = "hola";
+                         for(int k=0; k<personaje.transform.childCount;k++){
+                              if(personaje.transform.GetChild(k).name=="Nuevotexto"){
+                                   print(personaje.transform.GetChild(k).GetComponent<TextMeshPro>().text);
+                                  personaje.transform.GetChild(k).GetComponent<TextMeshPro>().text= NumeroJugadores.ListaJugadores[i]; 
+                              }
+                      }
                       print(personaje);
                       JugadoresSecuencia.Add(personaje);
                       if(NumeroJugadores.ListaColor[i]!="Normal"){

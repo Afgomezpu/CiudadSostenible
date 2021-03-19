@@ -9,6 +9,7 @@ public Transform[] Puntos;
 public GameObject[] Pregunta;
 public GameObject camara1;
 public GameObject camara2;
+public GameObject camara3;
 
 //Internos
 int IndexActual = 0; 
@@ -86,8 +87,14 @@ public void CalcularValores(int numeroDeCasillas)
 
 
 public void pregunta(){
-    cambioCamara2();
+    if(IndexActual==11 ||IndexActual==13 ||IndexActual==17 || IndexActual==21){
+        CambioCamara3();
     Pregunta[IndexActual].SetActive(true);
+    }
+    else {
+        cambioCamara2();
+    Pregunta[IndexActual].SetActive(true);
+    }
 
 }
 
@@ -95,12 +102,21 @@ public void pregunta(){
   void cambioCamara1(){
         camara2.SetActive(false);
         camara1.SetActive(true);
+        camara3.SetActive(false);
   }
 
     void cambioCamara2(){
         camara2.SetActive(true);
         camara1.SetActive(false);
+        camara3.SetActive(false);
   }
+  
+    void CambioCamara3(){
+    camara3.SetActive(true);
+    camara2.SetActive(false);
+    camara1.SetActive(false);
+ 
+   }
 
 
 
