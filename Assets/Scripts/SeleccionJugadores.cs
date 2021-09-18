@@ -5,6 +5,7 @@ using TMPro;
 
 public class SeleccionJugadores : MonoBehaviour
 {
+    
     ControladorJugadores NumeroJugadores;
     private int jugadores;
     public GameObject jugador;

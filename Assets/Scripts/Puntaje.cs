@@ -22,27 +22,35 @@ public class Puntaje : MonoBehaviour
      private int contador8;
      private int puntaje9;
      private int contador9;
+    private int[] puntuaciones=new int[]{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+    private int[] numeroPregunta;
 
     void Start()
     { 
-     puntaje1=0;
-     contador1=0;
-      puntaje2=0;
-     contador2=0;
-     puntaje3=0;
-     contador3=0;
-     puntaje4=0;
-     contador4=0;
-     puntaje5=0;
-     contador5=0;
-     puntaje6=0;
-     contador6=0;
-     puntaje7=0;
-     contador7=0;
-     puntaje8=0;
-     contador8=0;
-     puntaje9=0;
-     contador9=0;
+      
+
+      // for(int i=0; i<Puntuaciones.Length;i++){
+      //   Puntuaciones[i]=0;
+      // }
+      numeroPregunta=new int[23]; 
+     Puntaje1=0;
+     Contador1=0;
+      Puntaje2=0;
+     Contador2=0;
+     Puntaje3=0;
+     Contador3=0;
+     Puntaje4=0;
+     Contador4=0;
+     Puntaje5=0;
+     Contador5=0;
+     Puntaje6=0;
+     Contador6=0;
+     Puntaje7=0;
+     Contador7=0;
+     Puntaje8=0;
+     Contador8=0;
+     Puntaje9=0;
+     Contador9=0;
         
     }
 
@@ -152,5 +160,10 @@ public class Puntaje : MonoBehaviour
     get { return contador9; }
     set { contador9 = value; }
   } 
-
+  
+              public int[]  Puntuaciones  // property
+  {
+    get { return puntuaciones; }
+    set { puntuaciones = value; }
+  } 
 }

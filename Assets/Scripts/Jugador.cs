@@ -91,6 +91,7 @@ public void CalcularValores(int numeroDeCasillas)
 
 
 public void pregunta(){
+    print("hola");
     if(IndexActual==11 ||IndexActual==13 ||IndexActual==17 || IndexActual==21){
         CambioCamara3();
     Pregunta[IndexActual].SetActive(true);
